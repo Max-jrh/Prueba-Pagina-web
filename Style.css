@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ nav{
+    display: flex;
+    margin-bottom: 10px;
+}
+.cajaLogo{
+    display:flex;
+    align-items: end;
+    width: 15%;
+}
+.cajaLogo img{
+    user-select: none;
+    width: 50px;
+    max-width: 50px;
+
+}
+.cajaLogo h1{
+    user-select: none;
+}
+.Cajitanav{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: end;
+    padding-bottom: 3px;
+}
+.Cajitanav li{
+    font-weight: normal;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 300ms ease-in-out;
+    user-select: none;
+}
+.Cajitanav li:hover {
+    border-bottom:3px solid;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+#video{
+    height: 92vh;
+    background-color: black;
+    margin:0;
+    display:flex;
+    justify-content: center;  /*centrar un niv*/
+    align-items: center;
+}
+#video video{
+    width: 60%;
+}
+#video div{
+    color:white;
+    width: 20%;
+}
+#video div .Instalar{
+    color:black;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:80px;
+    margin:30px 80px;
+    font-family: "Roboto";
+    min-height: 90vh;
+}
+.cartas{
+    height: 55vh;
+    border-radius: 40px;
+    position: relative;
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+}
+.cartas:hover{ 
+    transform: scale(1.025);
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cartas img{
+    width: 100%;
+    height: 70%;
+    border-radius: 33px;
+
+}
+.infocarta{
+    height: 50vh;
+    padding: 10px;
+}
+.infocarta h3{
+    font-size: 1em;         /*em reduce el tamaño de la letra y se adapta*/
+
+}
+.Instalar{
+    border-radius:10px;
+    color:black;
+    height: 7%;
+    width: 90px;
+    background-color: rgb(253, 255, 107);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+
+}
+/*Mapa*/
+#mapa{
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    position: relative;
+    background-color: black;
+    margin: 0px;
+}
+
+#mapa h1{
+    position:absolute;
+    top: 50 px;
+    left: 50px;
+    font-size: 2em;
+    color:white;
+}
+#maa ifrmae{
+    width: 60%;
+
+}
+#Contacto{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 0px;
+}
+
+#Contacto h1{
+    position:absolute;
+    top:50px;
+    left:50px;
+    font-size: 2em;
+}
+form{
+    border-radius: 33px;
+    width: 25%;
+    height: 55vh;
+    background-color: rgb(212, 251, 255);
+    padding: 40px;
+    font-size: 1.5em;
+
+}
+form ul{
+    display: flex;
+    flex-direction: column; /*pone las cosas en fila*/
+    gap: 30px;
+
+}
+form ul li{
+    flex-direction: column;
+    display: flex;
+
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.237);
+    border-radius: 5px;
+
+}
+textarea{
+    border: 1px solid rgba(0, 0, 0, 0.237);
+    border-radius: 5px;
+
+}
+.boton{
+    border-radius: 10px;
+    color:black;
+    height: 7%;
+    width: 90px;
+    background-color: rgb(253, 255, 107);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border:none;
+
+}
+footer{
+    display:flex;
+    background-color: rgb(156, 9, 9);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    
+}
